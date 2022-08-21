@@ -69,3 +69,6 @@ Thumbs.db
 # Image files
 *.jpg
 *.png
+
+
+api_keys.txt
