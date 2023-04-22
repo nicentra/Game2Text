@@ -2,7 +2,7 @@
   --white: #f8f8f8;
   --black: #121212;
   --gray: #eee;
-  --purple: rgb(103,58,183);
+  --purple: rgb(103, 58, 183);
 }
 .light-theme {
   --primary: var(--purple);
@@ -20,6 +20,8 @@
 body {
   background-color: var(--mainBg);
   color: var(--fontColor) !important;
+  font-family: 'Rounded Mgen+ 2p', 'Rounded Mgen+ 2c', 'Rounded M+ 2p', 'Rounded M+ 2c', 'M PLUS 2',
+    'Noto Sans JP', 'Noto Serif JP';
 }
 #startMessage {
   z-index: 30;
@@ -48,7 +50,8 @@ body {
   grid-row-start: 6;
   grid-row-end: 7;
 }
-#output, #translatedOutput {
+#output,
+#translatedOutput {
   opacity: 1;
   transition: opacity 0.3s;
 }
@@ -60,7 +63,7 @@ body {
   border-radius: 6px;
   padding: 6px 0;
   cursor: pointer;
-  
+
   /* Position the tooltip */
   position: fixed;
   z-index: 999;
@@ -81,7 +84,7 @@ body {
   color: hotpink;
 }
 .hide {
-  opacity: 0 !important
+  opacity: 0 !important;
 }
 .options {
   padding-left: 10px;
@@ -122,7 +125,7 @@ dialog[open] {
   padding-left: 16px;
   padding-top: 10px;
   font-size: 16px;
-  color: rgb(103,58,183)
+  color: rgb(103, 58, 183);
 }
 .tab_select_wrapper {
   padding-left: 16px;
@@ -130,7 +133,8 @@ dialog[open] {
 .field_value_select {
   min-width: 200px;
 }
-video, canvas {
+video,
+canvas {
   width: 100vw;
   transition: height 0.3s ease-out;
   /* border: 1px solid #999; */
@@ -149,23 +153,23 @@ video, canvas {
 .canvasContextMenu {
   padding: 0px;
   min-width: 280px;
-  background: rgba(28,28,28,0.9);
+  background: rgba(28, 28, 28, 0.9);
 }
 .canvasContextMenuItem {
   color: #eee;
-  background: rgba(28,28,28,0.9);
+  background: rgba(28, 28, 28, 0.9);
   cursor: pointer;
 }
 .canvasContextMenuItem:hover {
-  background: rgba(255,255,255,0.1)
+  background: rgba(255, 255, 255, 0.1);
 }
 .canvasContextMenuItem > .mdl-list__item-primary-content > .mdl-list__item-icon {
   color: white;
 }
 .canvasContextSelectionImage {
   height: 100%;
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
   display: block;
 }
 .welcome-card-wide.mdl-card {
@@ -175,20 +179,20 @@ video, canvas {
 .welcome-card-wide > .mdl-card__title {
   color: #fff;
   height: 40vw;
-  background: url("static/greeting.jpg") center / cover;
+  background: url('static/greeting.jpg') center / cover;
 }
 .welcome-card-wide > .mdl-card__menu {
   color: #fff;
 }
 .canvasContextMenu {
-/*   grid-template-areas:
+  /*   grid-template-areas:
   'label select select select iconbutton'
   'image image image image image'; */
-   padding: 10px;
-   grid-gap: 50px;
+  padding: 10px;
+  grid-gap: 50px;
 }
 .canvasContextMenu > .profileSelect {
-   min-width: 220px; 
+  min-width: 220px;
 }
 .canvasContextMenu > .profileSelectImport {
   padding: 0;
@@ -201,10 +205,10 @@ video, canvas {
   margin-top: 14px;
   margin-bottom: 14px;
 }
- .canvasContextMenu > .binarizeSliderLabel {
+.canvasContextMenu > .binarizeSliderLabel {
   font-size: 16px;
 }
-.canvasContextMenu > .blurSliderLabel { 
+.canvasContextMenu > .blurSliderLabel {
   font-size: 16px;
 }
 .checkBoxContainer {
@@ -216,7 +220,7 @@ video, canvas {
 .checkBoxContainer > .mdl-checkbox__label {
   width: 30%;
 }
-.checkBoxContainer > .mdl-checkbox  {
+.checkBoxContainer > .mdl-checkbox {
   width: 10%;
   padding-top: 3px;
 }
@@ -234,18 +238,18 @@ video, canvas {
   background: white !important;
 }
 .settingsCard {
-  width: 100%; 
-  margin-top: 12px; 
-  padding-top: 0px; 
+  width: 100%;
+  margin-top: 12px;
+  padding-top: 0px;
   padding-bottom: 0px;
   overflow: visible !important;
   z-index: initial;
   min-height: initial;
 }
 .settingsCard > .mdl-list {
-  padding-top: 0px; 
-  padding-left: 10px; 
-  padding-right: 10px; 
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 0px;
 }
 .settingsCard > .mdl-list > .mdl-list__item {
@@ -255,11 +259,11 @@ video, canvas {
   overflow: visible !important;
 }
 .settingsCard > .mdl-list > .sectionTitle {
-  color: rgba(0, 0, 0, 0.8)
+  color: rgba(0, 0, 0, 0.8);
 }
 #hotkey_table {
-  width: 100%
+  width: 100%;
 }
 #hotkey_table > tbody > tr > td > input {
-  width: 100%
+  width: 100%;
 }

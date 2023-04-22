@@ -45,7 +45,7 @@ def tesseract_ocr(image, text_orientation):
         language += "_vert"
     custom_config = r'{} --oem {} --psm {} -c preserve_interword_spaces=1 {}'.format(get_tessdata_dir(), r_config(OCR_CONFIG, "oem"), psm, r_config(OCR_CONFIG, "extra_options").strip('"'))
     result = pytesseract.image_to_string(image, config=custom_config, lang=language)
-    return result
+    return "".join(result.splitlines()) # force output to one line
 
 tesseract_cmd, platform_name = path_to_tesseract()
 pytesseract.pytesseract.tesseract_cmd = tesseract_cmd

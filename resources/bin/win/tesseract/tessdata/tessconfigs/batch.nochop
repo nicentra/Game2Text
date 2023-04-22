@@ -1,2 +1,1 @@
-chop_enable 0
-wordrec_enable_assoc 0
+tessconfigs/batch.nochop

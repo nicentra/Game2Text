@@ -33,7 +33,7 @@ def deepl_translate(text):
     result = translator.translate_text(
         text,
         source_lang=r_config(TRANSLATION_CONFIG, "source_lang").upper() or "JA",
-        target_lang=r_config(TRANSLATION_CONFIG, "target_lang").upper() or "EN",
+        target_lang=r_config(TRANSLATION_CONFIG, "target_lang").upper() or "EN-GB",
         split_sentences='nonewlines')
     
     # response = requests.post(
